@@ -1,0 +1,290 @@
+/* This is a CSS file */
+body{
+    background-color: #FFFFF8;
+    margin: 0;
+    padding: 0;
+}
+ .content { 
+     margin-top: 118px; /* ヘッダーの高さと同じ値 */
+     margin-bottom: 105px;
+     position: relative;
+        }
+
+#chatichiran{
+    text-align: center;
+    font-size: 15px;
+    height: 50px;
+    border-bottom: solid 2px #b5b5b5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.box1{
+    border-bottom: solid 1px #b5b5b5;
+    background-color: #FFFFFF;
+  padding: 10px 15px;
+  text-decoration: none;
+  overflow: hidden; /* はみ出た部分を隠す */
+
+
+  display: flex;
+    align-items: flex-start; /* 左上に揃える */
+    /*margin-bottom: 10px;*/
+    border-radius: 5px;
+}
+.iconBox {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px; /* アイコンと名前・メッセージの間に隙間を追加 */
+}
+.iconBox img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* アイコンを丸くする */
+    object-fit: cover;  /* 画像が正方形に収まるように調整 */
+}
+.textContainer {
+    display: flex;
+    flex-direction: column; /* テキストを縦に並べる */
+    width: calc(100% - 55px);
+}
+.nameLabel {
+    font-weight: bold;
+}
+.messageText {
+    margin-left: 1rem;
+    white-space: nowrap; /* テキストの折り返しを防ぐ */
+    overflow: hidden; /* はみ出た部分を隠す */
+    text-overflow: ellipsis; /* はみ出た部分に省略記号を表示 */
+}
+
+
+
+.testBox{
+    background-color: aqua;
+    width: 100%;
+}
+
+
+
+
+.name{
+    color: #555555;
+    background-color: #E6c1c1;
+    text-align: center;
+    height: 50px;
+    line-height: 50px; /* 高さと同じ値を指定 */
+    position: fixed;
+    top: 118px;
+    width: 100%;
+    display: flex;
+
+  justify-content: space-between; /* 要素間のスペースを均等に */
+  align-items: center;    /* 縦方向の中央揃え */
+}
+
+.ana {
+            background-color: #e0e0e0; /* 背景色 */
+            text-align: center;
+            width: 90%; /* 幅 */
+            height: 30px; /* 高さ */
+            border-radius: 10px; /* 楕円形にする */
+            display: flex;
+            align-items: center; /* 縦方向の中央揃え */
+            justify-content: center; /* 横方向の中央揃え */
+            margin: 20px auto; /* 自動的に中央に配置 */
+            font-size: 13px;
+        }
+
+
+
+.chat-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.message {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    word-break: break-word;
+}
+
+.message p {
+    margin: 0;
+}
+
+
+
+
+.chat-input {
+    background-color: #FFFFF8;
+    display: flex;
+    padding: 10px;
+    bottom: 95px;
+    border-top: 1px solid #ddd;
+    position: fixed;
+    z-index: 1000;
+    width: calc(100% - 20px);
+    transition: bottom 0.3s ease; /* スムーズな位置調整 */
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+.chat-input textarea {
+    height: 1rem;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.chat-input button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #E6C1C1;
+    color: #555;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background-color: #E6C1C1;
+}
+
+
+
+
+.mesContents {
+    display: flex;
+    flex-direction: column; /* 子要素を縦に並べる */
+     top: 182px;
+    width: 100%;
+    padding-top: 65px;
+    margin-bottom: 155px;
+    left: 0;
+    overflow-y: auto;
+    height: 500px;
+    max-height: calc(100vh - 95px); /* 初期状態での高さ調整 */
+    transition: max-height 0.3s ease; /* 高さ変更時のスムーズなアニメーション */
+}
+
+.myMes {
+    text-align: left; /* テキストを左揃えにする */
+    background-color: #f0f0f0; /* 背景色を設定（任意） */
+    padding: 10px; /* パディングを追加 */
+    margin: 5px 0; /* 上下のマージンを追加 */
+    border-radius: 5px; /* 角を丸める（任意） */
+    display: inline-block; /* 要素の幅をテキストの長さに合わせる */
+    max-width: 80%; /* 要素の最大幅を80%にする */
+    margin-left: auto; /* 要素を右寄せにするために左のマージンを自動に */
+    white-space: pre-wrap;
+}
+
+.chatindexMes {
+    text-align: left; /* テキストを左揃えにする */
+    background-color: #e0e0e0; /* 背景色を設定（任意） */
+    padding: 10px; /* パディングを追加 */
+    margin: 5px 0; /* 上下のマージンを追加 */
+    border-radius: 5px; /* 角を丸める（任意） */
+    display: inline-block; /* 要素の幅をテキストの長さに合わせる */
+    max-width: 80%; /* 要素の最大幅を80%にする */
+    margin-right: auto; /* 要素を左寄せにするために右のマージンを自動に */
+}
+
+
+.chatBack {
+  margin-right: auto;     /* 左揃え：他の要素から自動で右側にスペースを取る */
+  padding: 0 1rem;
+}
+
+.userName {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;     /* テキスト自体も中央揃えに */
+}
+
+.mesPreview{
+    bottom: 95px;
+}
+
+
+
+.nameAndTimestamp {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; /* 名前とタイムスタンプの間にスペースを追加 */
+}
+
+.nameLabel {
+    font-weight: bold;
+    margin-right: 10px; /* 名前とタイムスタンプの間にスペースを追加 */
+}
+
+.timestampLabel {
+    font-size: 0.8em; /* タイムスタンプを少し小さく表示 */
+    color: gray; /* タイムスタンプの色 */
+    margin-left: auto; /* タイムスタンプを右に寄せる */
+}
+
+.messageText {
+    margin-top: 5px; /* メッセージとタイムスタンプの間にスペースを追加 */
+}
+
+
+
+/* チャットの時間表示 */
+.timestamp {
+    font-size: 0.8em;
+    color: gray;
+    margin-top: 2px;
+    display: block; /* 新しい行に表示する */
+}
+
+/* .myMes クラスの親要素に対するタイムスタンプのスタイル */
+.myMes .timestamp {
+    text-align: right; /* 右詰にする */
+}
+
+/* .chatindexMes クラスの親要素に対するタイムスタンプのスタイル */
+.chatindexMes .timestamp {
+    text-align: left; /* 左詰にする */
+}

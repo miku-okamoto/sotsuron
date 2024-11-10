@@ -1,0 +1,177 @@
+/* This is a CSS file */
+
+body{
+    background-color: #FFFFF8;
+    margin: 0;
+    padding: 0;
+}
+ .content { 
+     margin-top: 118px; /* ヘッダーの高さと同じ値 */
+        }
+
+
+
+.name{
+    color: #FFFFF8;
+    background-color: #b579c0;
+    text-align: center;
+    height: 50px;
+    line-height: 50px; /* 高さと同じ値を指定 */
+    position: fixed;
+    top: 118px;
+    width: 100%;
+}
+
+.ana {
+            background-color: #e0e0e0; /* 背景色 */
+            text-align: center;
+            width: 90%; /* 幅 */
+            height: 30px; /* 高さ */
+            border-radius: 10px; /* 楕円形にする */
+            display: flex;
+            align-items: center; /* 縦方向の中央揃え */
+            justify-content: center; /* 横方向の中央揃え */
+            margin: 20px auto; /* 自動的に中央に配置 */
+            font-size: 13px;
+        }
+
+
+
+.chat-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.message {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    word-break: break-word;
+}
+
+.message p {
+    margin: 0;
+}
+
+.user1 {
+    background-color: #b579c0;
+    color: #FFFFF8;
+    margin-right: auto;
+}
+
+.user2 {
+    background-color: #e0e0e0;
+    color: #333;
+    margin-left: auto;
+}
+
+.user1::before,
+.user2::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.user1::before {
+    border: 10px solid transparent;
+    border-right-color: #b579c0;
+    top: 10px;
+    left: -20px;
+}
+
+.user2::before {
+    border: 10px solid transparent;
+    border-left-color: #e0e0e0;
+    top: 10px;
+    right: -20px;
+}
+
+.chat-input {
+    background-color: #FFFFF8;
+    display: flex;
+    padding: 10px;
+    bottom: 95px;
+    border-top: 1px solid #ddd;
+    position: fixed;
+    z-index: 1000;
+    width: calc(100% - 20px);
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.chat-input button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background-color: #45a049;
+}
+
+.mesContents {
+    display: flex;
+    flex-direction: column; /* 子要素を縦に並べる */
+     top: 182px;
+    width: 100%;
+    margin-bottom: 155px;
+    left: 0;
+    overflow-y: auto;
+    height: 500px;
+}
+
+.myMes {
+    text-align: left; /* テキストを左揃えにする */
+    background-color: #f0f0f0; /* 背景色を設定（任意） */
+    padding: 10px; /* パディングを追加 */
+    margin: 5px 0; /* 上下のマージンを追加 */
+    border-radius: 5px; /* 角を丸める（任意） */
+    display: inline-block; /* 要素の幅をテキストの長さに合わせる */
+    max-width: 80%; /* 要素の最大幅を80%にする */
+    margin-left: auto; /* 要素を右寄せにするために左のマージンを自動に */
+}
+
+.k21h2078Mes {
+    text-align: left; /* テキストを左揃えにする */
+    background-color: #e0e0e0; /* 背景色を設定（任意） */
+    padding: 10px; /* パディングを追加 */
+    margin: 5px 0; /* 上下のマージンを追加 */
+    border-radius: 5px; /* 角を丸める（任意） */
+    display: inline-block; /* 要素の幅をテキストの長さに合わせる */
+    max-width: 80%; /* 要素の最大幅を80%にする */
+    margin-right: auto; /* 要素を左寄せにするために右のマージンを自動に */
+}

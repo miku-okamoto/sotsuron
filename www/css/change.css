@@ -1,0 +1,64 @@
+/* This is a CSS file */
+/* This is a CSS file */
+body{
+    background-color: #FFFFF8;
+    margin: 0;
+    padding: 0;
+}
+ .content { 
+     margin-top: 125px; /* ヘッダーの高さと同じ値 */
+        }
+
+
+.box{
+    display: flex;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+label {
+    color: black;
+    display: inline-block;
+    width: 120px;  /* ラベルの幅を固定 */
+    text-align: right;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+input {
+    width: calc(90% - 150px); /* 入力フィールドの幅を自動調整 */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="text"] {
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #79c0c0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 20px auto;
+}
+
+button:hover {
+    background-color: #79c0c0;
+}
+
+#inputName{
+    display: flex;               /* Flexboxを使用 */
+    justify-content: center;      /* 水平方向に中央揃え */
+    align-items: center;          /* 垂直方向に中央揃え */
+}

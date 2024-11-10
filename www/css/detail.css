@@ -1,0 +1,73 @@
+/* This is a CSS file */
+
+body{
+    background-color: #FFFFF8;
+    margin: 0;
+    padding: 0;
+}
+ .content { 
+     margin-top: 118px; /* ヘッダーの高さと同じ値 */
+     margin-bottom: 100px;
+
+        }
+
+
+
+
+.container {
+            position: relative;
+            width: 100%;
+            height: 150px;
+        }
+
+        .box {
+            position: absolute;
+            left: 100px; /* 任意の位置に調整 */
+            width: auto; /* ボックスの幅 */
+            height: auto;
+            padding: 10px;
+        }
+
+        .box img {
+            width: 100%;
+            height: auto;
+        }
+
+
+        .text-overlay {
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+.box1{
+    border: solid 1px #b5b5b5;
+    background-color: #FFFFFF;
+  line-height: 10px;
+  font-weight: bold;
+  font-size: 13px;
+  display: flex;
+  text-decoration: none; /* テキストの下線を消す */
+    color: inherit; /* テキストの色を継承する */
+}
+
+.box2{
+   padding: 10px;
+    }
+
+      .box2 img {
+  width: 50px; /* アイコン画像のサイズを調整 */
+  height: 50px; /* 高さも同じに設定 */
+  border-radius: 50%; /* 円形に切り抜く */
+  object-fit: cover; /* 画像の縦横比を保ちつつ、コンテナにフィットさせる */
+  position: relative;
+}
+
+.box3 p {
+    line-height: 18px; 
+}

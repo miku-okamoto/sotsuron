@@ -1,0 +1,103 @@
+body{
+     background-color:#79c0c0;
+    text-align: center;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button.button1{
+    color: #79c0c0;
+    background-color: #FFFFF8;
+    font-size: 24px;
+    height: 51px;
+    width: 140px;
+    border-radius: 10px;
+    border-color: #FFFFF8;
+    padding: 8px;
+}
+button.button2{
+    color: #FFFFF8;
+    background-color: #79c0c0;
+    font-size: 24px;
+    height: 51px;
+    width: 188px;
+    border-radius: 10px;
+    border: 1px solid #555;
+    padding: 8px;
+    margin-top: 30px;
+}
+
+
+div.title{
+    position: fixed;
+    top: 10%;
+    width: 100%;
+}
+div.wrap {
+  position: fixed;
+  top: 37%;
+  width: 100%;
+  text-align: center;
+}
+
+div.textBox{
+    text-align: left;
+    width: 70%;
+    position: relative;
+    margin:  0 auto;
+}
+
+div.button {
+  position: fixed;
+   top: 83%;
+  width: 100%;
+  text-align: center;
+}
+
+
+label {
+    color: #FFFFF8;
+  top: 0;
+  font-size: 16px;
+  margin: 10px;
+  padding: 0 10px;
+}
+
+
+input {
+    font-size: 16px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  border: 0px;
+  border-color: #FFFFF8;
+  width: calc(100% - 20px);
+} 
+
+input[type=text]:focus {
+  outline: none;
+}
+
+.title img {
+    width: 40%;
+}
+
+
+.title2{
+    margin-top: 100px;
+}
+.title2 img{
+    width: 60%;
+}
+
+
+
+.button3{
+     position: fixed;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+
+}

@@ -1,0 +1,364 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <title>Monaca Education ダイレクトプレビュー</title>
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <script src="js/education.js" defer></script>
+    <script src="js/config.js" defer></script>
+    <script type="module" src="js/chat.js" defer></script>
+    <script type="module" src="js/main.js" defer></script>
+    <script>
+    </script>
+</head>
+
+<body>
+
+     <div class="header">
+        <p>ログイン中：<span class="loginUser">k00x0000</span></p>
+           <a href="mypage.html" class="mypage">
+    <img src="img/mypage.png" alt="back">
+        </a>
+         <a href="tutorial1.html" class="hatena">
+    <img src="img/hatena.png">
+        </a>
+        <p><strong>チャット</strong></p>
+    </div>
+
+    <div class="content">
+        <!--
+<a href="chatScreen.html"><div class="testBox">チャットの中に飛ぶ遷移のテスト</div></a>
+-->
+<div id="chatichiran">チャット一覧</div>
+
+        <div class="mesPreview"></div>
+
+        <div class="chatContents" id="chatk21h2078">
+            <div class="name">
+                <div class="chatBack">＜</div>
+                <div class="userName">みう</div>
+            </div>
+            <div class="mesContents"></div>
+            <div class="chat-input">
+                <textarea placeholder="メッセージを入力..." class="MesText"></textarea>
+                <button class="MesSave">送信</button>
+            </div>
+        </div>
+
+        <div class="chatContents" id="chatk21h2025">
+            <div class="name">
+                <div class="chatBack">＜</div>
+                <div class="userName">みく</div>
+            </div>
+            <div class="mesContents"></div>
+            <div class="chat-input">
+                <textarea placeholder="メッセージを入力..." class="MesText"></textarea>
+                <button class="MesSave">送信</button>
+            </div>
+        </div>
+
+        <div class="chatContents" id="chatk99h9999">
+            <div class="name">
+                <div class="chatBack">＜</div>
+                <div class="userName">てすと</div>
+            </div>
+            <div class="mesContents"></div>
+            <div class="chat-input">
+                <textarea placeholder="メッセージを入力..." class="MesText"></textarea>
+                <button class="MesSave">送信</button>
+            </div>
+        </div>
+
+        <div class="chatContents" id="chatk44h4444">
+            <div class="name">
+                <div class="chatBack">＜</div>
+                <div class="userName">よにんめ</div>
+            </div>
+            <div class="mesContents"></div>
+            <div class="chat-input">
+                <textarea placeholder="メッセージを入力..." class="MesText"></textarea>
+                <button class="MesSave">送信</button>
+            </div>
+        </div>
+
+
+
+        <div class="chatContents" id="chatk24f2092">
+            <div class="name">
+                <div class="chatBack">＜</div>
+                <div class="userName">りんご</div>
+            </div>
+            <div class="mesContents"></div>
+            <div class="chat-input">
+                <textarea placeholder="メッセージを入力..." class="MesText"></textarea>
+                <button class="MesSave">送信</button>
+            </div>
+        </div>
+        <div class="chatContents" id="chatk24h2036">
+            <div class="name">
+                <div class="chatBack">＜</div>
+                <div class="userName">인생짱짱</div>
+            </div>
+            <div class="mesContents"></div>
+            <div class="chat-input">
+                <textarea placeholder="メッセージを入力..." class="MesText"></textarea>
+                <button class="MesSave">送信</button>
+            </div>
+        </div>
+        <div class="chatContents" id="chatk22g4051">
+            <div class="name">
+                <div class="chatBack">＜</div>
+                <div class="userName">ひなの</div>
+            </div>
+            <div class="mesContents"></div>
+            <div class="chat-input">
+                <textarea placeholder="メッセージを入力..." class="MesText"></textarea>
+                <button class="MesSave">送信</button>
+            </div>
+        </div>
+
+        <div class="chatContents" id="chatk24h2079">
+            <div class="name">
+                <div class="chatBack">＜</div>
+                <div class="userName">なてぃ</div>
+            </div>
+            <div class="mesContents"></div>
+            <div class="chat-input">
+                <textarea placeholder="メッセージを入力..." class="MesText"></textarea>
+                <button class="MesSave">送信</button>
+            </div>
+        </div>
+        <div class="chatContents" id="chatk21h2101">
+            <div class="name">
+                <div class="chatBack">＜</div>
+                <div class="userName">りんかーん</div>
+            </div>
+            <div class="mesContents"></div>
+            <div class="chat-input">
+                <textarea placeholder="メッセージを入力..." class="MesText"></textarea>
+                <button class="MesSave">送信</button>
+            </div>
+        </div>
+        <div class="chatContents" id="chatk24h2051">
+            <div class="name">
+                <div class="chatBack">＜</div>
+                <div class="userName">あかり</div>
+            </div>
+            <div class="mesContents"></div>
+            <div class="chat-input">
+                <textarea placeholder="メッセージを入力..." class="MesText"></textarea>
+                <button class="MesSave">送信</button>
+            </div>
+        </div>
+        <div class="chatContents" id="chatk23e1056">
+            <div class="name">
+                <div class="chatBack">＜</div>
+                <div class="userName">ちゃこ</div>
+            </div>
+            <div class="mesContents"></div>
+            <div class="chat-input">
+                <textarea placeholder="メッセージを入力..." class="MesText"></textarea>
+                <button class="MesSave">送信</button>
+            </div>
+        </div>
+        <div class="chatContents" id="chatk24h2081">
+            <div class="name">
+                <div class="chatBack">＜</div>
+                <div class="userName">ルーク</div>
+            </div>
+            <div class="mesContents"></div>
+            <div class="chat-input">
+                <textarea placeholder="メッセージを入力..." class="MesText"></textarea>
+                <button class="MesSave">送信</button>
+            </div>
+        </div>
+        <div class="chatContents" id="chatk23f3085">
+            <div class="name">
+                <div class="chatBack">＜</div>
+                <div class="userName">Birne</div>
+            </div>
+            <div class="mesContents"></div>
+            <div class="chat-input">
+                <textarea placeholder="メッセージを入力..." class="MesText"></textarea>
+                <button class="MesSave">送信</button>
+            </div>
+        </div>
+        <div class="chatContents" id="chatk23h2074">
+            <div class="name">
+                <div class="chatBack">＜</div>
+                <div class="userName">りな</div>
+            </div>
+            <div class="mesContents"></div>
+            <div class="chat-input">
+                <textarea placeholder="メッセージを入力..." class="MesText"></textarea>
+                <button class="MesSave">送信</button>
+            </div>
+        </div>
+        <div class="chatContents" id="chatk23h2004">
+            <div class="name">
+                <div class="chatBack">＜</div>
+                <div class="userName">ななな</div>
+            </div>
+            <div class="mesContents"></div>
+            <div class="chat-input">
+                <textarea placeholder="メッセージを入力..." class="MesText"></textarea>
+                <button class="MesSave">送信</button>
+            </div>
+        </div>
+        <div class="chatContents" id="chatk23h2016">
+            <div class="name">
+                <div class="chatBack">＜</div>
+                <div class="userName">みん</div>
+            </div>
+            <div class="mesContents"></div>
+            <div class="chat-input">
+                <textarea placeholder="メッセージを入力..." class="MesText"></textarea>
+                <button class="MesSave">送信</button>
+            </div>
+        </div>
+        <div class="chatContents" id="chatk23h2070">
+            <div class="name">
+                <div class="chatBack">＜</div>
+                <div class="userName">まさこ</div>
+            </div>
+            <div class="mesContents"></div>
+            <div class="chat-input">
+                <textarea placeholder="メッセージを入力..." class="MesText"></textarea>
+                <button class="MesSave">送信</button>
+            </div>
+        </div>
+        <div class="chatContents" id="chatk23f2014">
+            <div class="name">
+                <div class="chatBack">＜</div>
+                <div class="userName">えり</div>
+            </div>
+            <div class="mesContents"></div>
+            <div class="chat-input">
+                <textarea placeholder="メッセージを入力..." class="MesText"></textarea>
+                <button class="MesSave">送信</button>
+            </div>
+        </div>
+        <div class="chatContents" id="chatd23v204">
+            <div class="name">
+                <div class="chatBack">＜</div>
+                <div class="userName">pom</div>
+            </div>
+            <div class="mesContents"></div>
+            <div class="chat-input">
+                <textarea placeholder="メッセージを入力..." class="MesText"></textarea>
+                <button class="MesSave">送信</button>
+            </div>
+        </div>
+        <div class="chatContents" id="chatk24h2102">
+            <div class="name">
+                <div class="chatBack">＜</div>
+                <div class="userName">yul</div>
+            </div>
+            <div class="mesContents"></div>
+            <div class="chat-input">
+                <textarea placeholder="メッセージを入力..." class="MesText"></textarea>
+                <button class="MesSave">送信</button>
+            </div>
+        </div>
+        <div class="chatContents" id="chatk24h2068">
+            <div class="name">
+                <div class="chatBack">＜</div>
+                <div class="userName">まゆまゆ</div>
+            </div>
+            <div class="mesContents"></div>
+            <div class="chat-input">
+                <textarea placeholder="メッセージを入力..." class="MesText"></textarea>
+                <button class="MesSave">送信</button>
+            </div>
+        </div>
+        <div class="chatContents" id="chatk24h2082">
+            <div class="name">
+                <div class="chatBack">＜</div>
+                <div class="userName">ねね</div>
+            </div>
+            <div class="mesContents"></div>
+            <div class="chat-input">
+                <textarea placeholder="メッセージを入力..." class="MesText"></textarea>
+                <button class="MesSave">送信</button>
+            </div>
+        </div>
+        <div class="chatContents" id="chatk23h2125">
+            <div class="name">
+                <div class="chatBack">＜</div>
+                <div class="userName">み</div>
+            </div>
+            <div class="mesContents"></div>
+            <div class="chat-input">
+                <textarea placeholder="メッセージを入力..." class="MesText"></textarea>
+                <button class="MesSave">送信</button>
+            </div>
+        </div>
+        <div class="chatContents" id="chatk22h2091">
+            <div class="name">
+                <div class="chatBack">＜</div>
+                <div class="userName">はちどり</div>
+            </div>
+            <div class="mesContents"></div>
+            <div class="chat-input">
+                <textarea placeholder="メッセージを入力..." class="MesText"></textarea>
+                <button class="MesSave">送信</button>
+            </div>
+        </div>
+        <div class="chatContents" id="chatk22h2702">
+            <div class="name">
+                <div class="chatBack">＜</div>
+                <div class="userName">りん</div>
+            </div>
+            <div class="mesContents"></div>
+            <div class="chat-input">
+                <textarea placeholder="メッセージを入力..." class="MesText"></textarea>
+                <button class="MesSave">送信</button>
+            </div>
+        </div>
+        <div class="chatContents" id="chatk23h2057">
+            <div class="name">
+                <div class="chatBack">＜</div>
+                <div class="userName">ゆうみ</div>
+            </div>
+            <div class="mesContents"></div>
+            <div class="chat-input">
+                <textarea placeholder="メッセージを入力..." class="MesText"></textarea>
+                <button class="MesSave">送信</button>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+   <nav class="footer">
+    <a href="qa.html">
+        <div class="navContents">
+            <img src="img/iconQA0.png" height="60px" alt="QA">
+            <p>Q&A</p>
+        </div>
+    </a>
+    <a href="chat.html">
+        <div class="navContents">
+            <img src="img/iconChat1.png" height="60px" alt="Chat">
+            <p>チャット</p>
+        </div>
+    </a>
+    <a href="bubble.html">
+        <div class="navContents">
+            <img src="img/iconBubble0.png" height="60px" alt="Bubble">
+            <p>シャボン玉</p>
+        </div>
+    </a>
+</nav>
+
+</body>
+
+</html>

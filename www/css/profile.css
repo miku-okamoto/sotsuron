@@ -1,0 +1,100 @@
+body{
+    background-color: #FFFFF8;
+    margin: 0;
+    padding: 0;
+}
+ .content { 
+     margin-top: 118px; /* ヘッダーの高さと同じ値 */
+        }
+
+
+.box1 {
+  display: flex; /* アイコンと名前を横並びに */
+  align-items: center; /* アイコンと名前を垂直方向に中央揃え */
+  position: relative; /* アイコンの相対位置を調整するために相対位置を設定 */
+  z-index: 2; /* 名前とアイコンを前面に表示 */
+  padding-top: 10px;
+}
+
+.box2 {
+  margin-right: 20px; /* アイコンと名前の間に余白を設定 */
+  margin-left: 30px;
+  position: relative; /* アイコンを上にずらすために相対位置を設定 */
+  z-index: 2; /* アイコンを前面に表示 */
+}
+
+
+.box2 img {
+  width: 120px; /* アイコン画像のサイズを調整 */
+  height: 120px; /* 高さも同じに設定 */
+  border-radius: 50%; /* 円形に切り抜く */
+  object-fit: cover; /* 画像の縦横比を保ちつつ、コンテナにフィットさせる */
+  position: relative;
+  z-index: 2;
+}
+
+
+
+.box3{
+     text-align: left; /* テキストを左揃えにする */
+}
+
+.box3 p{
+    margin: 0; /* 不要な余白を除去 */
+    font-size: 10px;
+}
+.box3 h1 {
+  margin: 0; /* 不要な余白を除去 */
+  font-size: 24px; /* 名前のフォントサイズを調整 */
+}
+
+
+.box4 {
+  border: 1px solid #b5b5b5; /* 四角い枠の設定 */
+  background-color: #FFFFFF;
+  padding: 15px; /* 枠内の余白を設定 */
+  width: 90%; /* 枠の幅を親要素に合わせる */
+  margin: 0 auto; /* 横方向の中央揃え */
+  box-sizing: border-box; /* パディングを含めて幅を計算 */
+  margin-top: -30px; /* 枠を上に移動してアイコンと重ねる */
+  z-index: 1; /* 四角い枠をアイコンの背面に表示 */
+  position: relative;
+  text-align: left; /* テキストを左揃えにする */
+  
+}
+
+.profile {
+  margin: 0; /* 不要な余白を除去 */
+  padding-top: 20px;
+}
+
+.send {
+  color: #FFFFFF;
+  background-color: #79c0c0;
+  height: 50px;
+  width: 220px;
+  margin: 20px auto; /* 横方向と縦方向の中央揃え */
+  text-align: center;
+  display: flex; /* フレックスボックスで中央揃え */
+  align-items: center; /* 縦方向の中央揃え */
+  justify-content: center; /* 横方向の中央揃え（中央揃えのために冗長ですが、明示的に指定） */
+  border-radius: 10px; /* 角を丸くする */
+}
+
+a {
+  text-decoration: none; /* 下線を消す */
+  color: inherit; /* テキストの色を親要素から継承する */
+}
+
+
+th {
+    padding-right: 20px; /* 任意の値を指定 */
+}
+
+
+.pen img{
+     position: absolute;  /* 画像を固定 */
+
+    right: 12px;
+    top: 15px;  
+}

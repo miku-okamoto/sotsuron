@@ -1,0 +1,312 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <title>Monaca Education ダイレクトプレビュー</title>
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/qa.css">
+    <script src="js/education.js" defer></script>
+    <script src="js/config.js" defer></script>
+    <script type="module" src="js/qa.js" defer></script>
+    <script>
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <p>ログイン中：<span class="loginUser">k00x0000</span></p>
+
+        <a href="chat.html" class="backQA">
+            <img src="img/back.png" alt="back">
+        </a>
+        <p><strong>Q＆A</strong></p>
+    </div>
+    <div class="qaSub">
+        <a href="#" class="qaSubIcon" data-index="1">
+            <div class="qaSubContentsWrap" id="wrap1">
+                <div class="qaSubContents" id="qaAll">Q＆A一覧</div>
+            </div>
+        </a>
+        <a href="#" class="qaSubIcon" data-index="2">
+            <div class="qaSubContentsWrap" id="wrap2">
+                <div class="qaSubContents" id="qaClass">授業</div>
+            </div>
+        </a>
+        <a href="#" class="qaSubIcon" data-index="3">
+            <div class="qaSubContentsWrap" id="wrap3">
+                <div class="qaSubContents" id="qaNotClass">授業以外</div>
+            </div>
+        </a>
+        <a href="#" class="qaSubIcon" data-index="4">
+            <div class="qaSubContentsWrap" id="wrap4">
+                <div class="qaSubContents" id="qaMatching">マッチング</div>
+            </div>
+        </a>
+        <a href="#" class="qaSubIcon" data-index="5">
+            <div class="qaSubContentsWrap" id="wrap5">
+                <div class="qaSubContents" id="qaQ"><span id="shitumonsuru"><strong>質問する</strong></span></div>
+            </div>
+        </a>
+    </div>
+
+    <div class="qaWrap"></div>
+
+
+
+    <div class="qaContents" id="sub1">
+
+        <div class="qaAllSub">
+            <a href="#" class="qaAllSubIcon" data-index="1">
+                <div class="qaAllSubContents" id="qaAll1">回答受付中</div>
+            </a>
+            <a href="#" class="qaAllSubIcon" data-index="2">
+                <div class="qaAllSubContents" id="qaAll2">解決済み</div>
+            </a>
+            <a href="#" class="qaAllSubIcon" data-index="3">
+                <div class="qaAllSubContents" id="qaAll3">全て</div>
+            </a>
+        </div>
+
+
+        <div class="qaAllContents" id="all1">
+            <h3>回答受付中</h3>
+        </div>
+        <div class="qaAllContents" id="all2">
+            <h3>解決済み</h3>
+        </div>
+        <div class="qaAllContents" id="all3">
+            <h3>全て</h3>
+        </div>
+    </div>
+
+
+    <div class="qaContents" id="sub2">
+        <div class="qaClassSub">
+            <a href="#" class="qaClassSubIcon" data-index="1">
+                <div class="qaClassSubContents" id="qaClass1">履修中</div>
+            </a>
+            <a href="#" class="qaClassSubIcon" data-index="2">
+                <div class="qaClassSubContents" id="qaClass2">全て</div>
+            </a>
+        </div>
+
+        <div class="qaClassContents" id="class1">
+            <h3>履修中</h3>
+        </div>
+        <div class="qaClassContents" id="class2">
+            <h3>全て</h3>
+        </div>
+    </div>
+
+
+    <div class="qaContents" id="sub3">
+        <div class="qaNotClassContents" id="notClass">
+            <h3>授業以外</h3>
+        </div>
+    </div>
+
+
+    <div class="qaContents" id="sub4">
+        <div class="qaNotClassContents" id="Match">
+            <h3>マッチング</h3>
+        </div>
+
+    </div>
+
+    <div class="qaContents" id="sub5">
+        <h3>　</h3>
+        <div class="qaSend">
+            <div class="qaSendTitle">
+                <div id="shitumontoukou">質問投稿</div>
+            </div>
+            <div class="qaSendContents">
+                <p>なんでも投稿してみよう</p>
+
+                <div class="qaCategory">
+                    <p id="toukoukategori">投稿カテゴリを選択</p>
+
+                    <a href="#" class="qaCategoryIcon" data-index="1">
+                        <div class="qaCategoryContents" id="qaCategory1">
+                            <select id="selectClass" name="class">
+                                <option value="" disabled selected>授業</option>
+
+
+                                <option value="" disabled>【総合教養科目】</option>
+                                <option value="生命と医療の科学">生命と医療の科学</option>
+                                <option value="遺伝の科学">遺伝の科学</option>
+                                <option value="宇宙の科学">宇宙の科学</option>
+                                <option value="自然環境と人間社会">自然環境と人間社会</option>
+                                <option value="東洋の哲学のあゆみ">東洋の哲学のあゆみ</option>
+                                <option value="女性学・ジェンダーを学ぶ">女性学・ジェンダーを学ぶ</option>
+                                <option value="こどものこころ">こどものこころ</option>
+                                <option value="平和学">平和学</option>
+                                <option value="こころと社会">こころと社会</option>
+                                <option value="日本国憲法">日本国憲法</option>
+                                <option value="現代社会と教育">現代社会と教育</option>
+                                <option value="人文社会横断型B">人文社会横断型B</option>
+                                <option value="人文社会横断型F">人文社会横断型F</option>
+                                <option value="女性のウェルネス・身体運動">女性のウェルネス・身体運動</option>
+                                <option value="スポーツB">スポーツB</option>
+                                <option value="栄養と健康">栄養と健康</option>
+                                <option value="性と生命(セクソロジー)">性と生命(セクソロジー)</option>
+
+                                <option value="" disabled>【挑戦する知性科目】</option>
+                                <option value="挑戦するリベラルアーツ">挑戦するリベラルアーツ</option>
+
+                                <option value="" disabled>【キリスト教学科目】</option>
+                                <option value="キリスト教学Ⅱ(キリスト教と現代の宗教事情)">キリスト教学Ⅱ(キリスト教と現代の宗教事情)</option>
+                                <option value="キリスト教学Ⅲ(聖書と文化)">キリスト教学Ⅲ(聖書と文化)</option>
+                                <option value="キリスト教学入門Ⅱ">キリスト教学入門Ⅱ</option>
+                                <option value="キリスト教学Ⅰ">キリスト教学Ⅰ</option>
+
+                                <option value="" disabled>【外国語科目】</option>
+                                <option value="Speaking Skills B">Speaking Skills B</option> 
+                                <option value="ReadingⅡB">ReadingⅡB</option>
+                                <option value="Critical Reading and Discussion B">Critical Reading and Discussion B</option>
+                                <option value="Discussion Skills B">Discussion Skills B</option>
+                                <option value="Academic Discussion Skills B">Academic Discussion Skills B</option>
+                                <option value="Academic Writing Skills Ⅱ">Academic Writing Skills Ⅱ</option>
+                                <option value="Academic Reading Skills B">Academic Reading Skills B</option>
+                                <option value="English through Drama B">English through Drama B</option>
+                                <option value="TOEIC講座">TOEIC講座</option>
+                                <option value="韓国語初級2">韓国語初級2</option>
+                                <option value="韓国語(会話)">韓国語(会話)</option>
+                                <option value="韓国語初級">韓国語初級</option>
+                                <option value="ドイツ語初級">ドイツ語初級</option>
+                                <option value="フランス語初級2">フランス語初級2</option>
+
+                                <option value="" disabled>【情報処理科目】</option>
+                                <option value="情報処理技法Ⅱ">情報処理技法Ⅱ</option>
+                                <option value="情報処理技法(マルチメディアと表現)Ⅱ">情報処理技法(マルチメディアと表現)Ⅱ</option>
+                                <option value="DS・ICT入門Ⅱ">DS・ICT入門Ⅱ</option>
+
+                                <option value="" disabled>【コミュニケーション専攻】</option>
+                                <option value="WebプログラミングⅡ">WebプログラミングⅡ</option>
+                                <option value="アプリ作成入門">アプリ作成入門</option>
+                                <option value="ICTリテラシーⅡ">ICTリテラシーⅡ</option>
+                                <option value="多変量解析">多変量解析</option>
+                                <option value="統計学">統計学</option>
+                                <option value="コミュニケーション心理学B">コミュニケーション心理学B</option>
+                                <option value="コミュニケーション研究法入門">コミュニケーション研究法入門</option>
+                                <option value="コミュニケーション統計法2">コミュニケーション統計法2</option>
+                                <option value="コミュニケーション概論Ⅱ(メディア)">コミュニケーション概論Ⅱ(メディア)</option>
+                                <option value="コミュニケーション概論Ⅱ(情報デザイン)">コミュニケーション概論Ⅱ(情報デザイン)</option>
+                                <option value="コミュニケーション概論Ⅱ(多文化)">コミュニケーション概論Ⅱ(多文化)</option>
+                                <option value="メディアと経済">メディアと経済</option>
+                                <option value="メディア産業論">メディア産業論</option>
+                                <option value="広告と消費者心理">広告と消費者心理</option>
+                                <option value="社会調査法実習(質問紙調査)Ⅱ">社会調査法実習(質問紙調査)Ⅱ</option>
+                                <option value="社会調査実習Ⅱ">社会調査実習Ⅱ</option>
+                                <option value="デザイン思考Ⅱ">デザイン思考Ⅱ</option>
+                                <option value="文化心理学(文化と自己)">文化心理学(文化と自己)</option>
+                                <option value="文化心理学(グローバル社会)">文化心理学(グローバル社会)</option>
+                                <option value="知覚・認知心理学概論">知覚・認知心理学概論</option>
+                                <option value="3年次演習(コミュニケーション)Ⅱ">3年次演習(コミュニケーション)Ⅱ</option>
+                                <option value="4年次ゼミ">4年次ゼミ</option>
+                                <option value="コミュニケーション科学(ヒューマン・コンピューター・インターラクション)Ⅱ">コミュニケーション科学(ヒューマン・コンピューター・インターラクション)Ⅱ</option>
+
+                                <option value="" disabled>【コミュニティ構想専攻】</option>
+                                <option value="コミュニティとリーダーシップ">コミュニティとリーダーシップ</option>
+                                <option value="地域共生とイノベーション">地域共生とイノベーション</option>
+                                <option value="3年次演習(コミュニティ構想)Ⅱ">3年次演習(コミュニティ構想)Ⅱ</option>
+
+                                <option value="" disabled>【経済学専攻】</option>
+                                <option value="経営ファイナンス論">経営ファイナンス論</option>
+                                <option value="経営戦略論">経営戦略論</option>
+                                <option value="都市・地域経済学">都市・地域経済学</option>
+
+                                <option value="" disabled>【人文学科共通】</option>
+                                <option value="人文学入門">人文学入門</option>
+                                <option value="法学概論">法学概論</option>
+                                <option value="日本近現代文学入門">日本近現代文学入門</option>
+
+                                <option value="" disabled>【日本文学専攻】</option>
+                                <option value="現代日本語演習Ⅱ">現代日本語演習Ⅱ</option>
+                                <option value="日本語学概論Ⅱ">日本語学概論Ⅱ</option>
+                                <option value="日本文学概論(古典)AⅡ">日本文学概論(古典)AⅡ</option>
+                                <option value="日本現代文学B">日本現代文学B</option>
+                                <option value="日本古典文学入門">日本古典文学入門</option>
+                                <option value="日本文学概論近現代">日本文学概論近現代</option>
+                                <option value="日本の文化(芸能)Ⅱ">日本の文化(芸能)Ⅱ</option>
+                                <option value="古典文学基礎演習(くずし字)">古典文学基礎演習(くずし字)</option>
+
+                                <option value="" disabled>【歴史文化専攻】</option>
+                                <option value="アジア史概論Ⅱ">アジア史概論Ⅱ</option>
+                                <option value="日本古代史">日本古代史</option>
+                                <option value="世界遺産学Ｂ">世界遺産学Ｂ</option>
+                                <option value="文献・資料演習(西洋近現代)BⅡ">文献・資料演習(西洋近現代)BⅡ</option>
+                                <option value="オーラル・ヒストリー">オーラル・ヒストリー</option>
+
+                                <option value="" disabled>【哲学専攻】</option>
+                                <option value="現代哲学の課題と方法">現代哲学の課題と方法</option>
+
+                                <option value="" disabled>【学芸員課程】</option>
+                                <option value="博物館経営論">博物館経営論</option>
+                                <option value="生涯学習論">生涯学習論</option>
+                                <option value="博物館展示論">博物館展示論</option>
+
+                                <option value="" disabled>【その他】</option>
+                                <option value="女性と社会">女性と社会</option>
+                                <option value="論文指導演習Ⅱ">論文指導演習Ⅱ</option>
+
+
+
+                            </select>
+                        </div>
+                    </a>
+                    <a href="#" class="qaCategoryIcon" data-index="2">
+                        <div class="qaCategoryContents" id="qaCategory2">授業以外</div>
+                    </a>
+                    <a href="#" class="qaCategoryIcon" data-index="3">
+                        <div class="qaCategoryContents" id="qaCategory3">マッチング</div>
+                    </a>
+
+                </div>
+
+
+                <div class="qaText">
+                    <label for="qaText">
+                        <textarea id="qaText" name="qaText"></textarea>
+                    </label>
+                </div>
+                <div class="qaSendButton">
+                    <div class="sendButton"><button type="submit" id="QAsave">投稿</button></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sended">投稿済みの質問</div><br><br>
+        <div class="qaMySendContents" id="Sended">
+
+        </div>
+
+    </div>
+
+    <nav class="footer">
+    <a href="qa.html">
+        <div class="navContents">
+            <img src="img/iconQA1.png" height="60px" alt="QA">
+            <p>Q&A</p>
+        </div>
+    </a>
+    <a href="chat.html">
+        <div class="navContents">
+            <img src="img/iconChat0.png" height="60px" alt="Chat">
+            <p>チャット</p>
+        </div>
+    </a>
+    <a href="bubble.html">
+        <div class="navContents">
+            <img src="img/iconBubble0.png" height="60px" alt="Bubble">
+            <p>シャボン玉</p>
+        </div>
+    </a>
+</nav>
+</body>
+
+</html>
